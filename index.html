@@ -101,6 +101,28 @@
     </div>
 </section>
 
+<style>
+    .tldr-box {
+      margin-bottom: 1rem;
+      padding: 0.9rem 1rem;
+      border-left: 4px solid #3273dc;
+      background: #f5f7fb;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+  </style>
+<div class="columns is-centered">
+    <div class="column is-three-fifths">
+      <div class="content has-text-justified">
+        <p class="tldr-box">
+          <strong>TL;DR:</strong> SemanticNVS improves long-range novel view synthesis by integrating pre-trained semantic features—incorporating warped semantics and an alternating scheme of understanding and generation at each denoising step, achieving 4.69%–15.26% FID gains over prior SOTA.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
 
 <section class="hero teaser">
     <div class="hero-body">
@@ -193,6 +215,7 @@
     <div class="hero-body">
         <div class="container" style="text-align: center; ">
             <h2 class="title is-3">Comparison with Baselines on Full Trajectories</h2>
+            In this setting, we evaluate on full trajectories (more than 250 frames) for comparison.
             <div id="cmp-gt-carousel-horizontal" class="carousel results-carousel">
                 <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
                     <source src="./video/full_trajectory_comparison/f5b89b1a052e50dd.mp4" type="video/mp4">
@@ -258,6 +281,7 @@
     <div class="hero-body">
         <div class="container" style="text-align: center; ">
             <h2 class="title is-3">Comparison with Baselines on Subsampled Trajectories</h2>
+            In this setting, we uniformly subsample the full trajectories to obtain 20-frame trajectories for a fair comparison.
             <div id="cmp-gt-carousel-horizontal" class="carousel results-carousel">
 
 
